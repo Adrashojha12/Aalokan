@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800&display=swap');
+.about-aalokan{
+    background: #CE0C00;
+    border-bottom: 50px solid #bb1f15;
+}
+.Aalokan-heading{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Saira', sans-serif;
+}
+
+.About-Home{
+    font-family: 'Saira', sans-serif;
+    font-size: 14px;
+    display: flex;
+}
+.PRELIMINARY{
+    padding: 10px 0 5px 0;
+    color: #bb1f15;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Saira', sans-serif;
+    line-height: 32px;
+}
+.CRITERIA{
+    font-size: 25px;
+    color: #000;
+    text-align: justify;
+    font-weight: bold;
+}
+.Golden{
+    font-size: 19px;
+    color: #000;
+    text-align: justify;
+    font-weight: bold;
+}
+.Candidates{
+    font-size: 20px;
+    color: #000;
+    text-align: justify;
+    font-weight: bold;
+}
+.register-now{
+    background-color: #FF6600;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 15px;
+    
+}                                  
+.Comprehension{
+    font-size: 19px;
+    color: #000;
+    text-align: justify;
+    list-style: circle;
+    padding: 0 0 0 40px;
+    line-height: 10px;
+}
+.text-circle{
+    display: flex;
+    text-align: justify;
+}
+.aalokan-img5{
+    width: 365px;
+    height: 350px;
+    padding-bottom: 20px;
+}
+.cdm-image{
+width:"720px";
+ height:"250.69px";
+}
+@media screen and  (max-width: 992px){
+    .Aalokan-heading{
+        font-size: 20px;
+    }
+    .PRELIMINARY{
+    font-size: 16px;
+    line-height: 24px;
+    }
+    .Golden{
+        font-size: 16px;
+    }
+    .Candidates{
+        font-size: 16px;
+    }
+    .cdm-image{
+        width: 100%;
+        height: auto;
+    }
+    .aalokan-img5{
+        width: 100%;
+        height: auto;
+    }
+
+}

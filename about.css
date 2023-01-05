@@ -1,0 +1,102 @@
+ @import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800&display=swap');
+.about-aalokan{
+    background: #CE0C00;
+    border-bottom: 50px solid #bb1f15;
+}
+.Aalokan-heading{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Saira', sans-serif;
+}
+.About-Home{
+    font-family: 'Saira', sans-serif;
+    font-size: 14px;
+    display: flex;
+}
+.about-image-text{
+    display: flex;
+}
+.aalokan-pg{
+    font-size: 18.5px;
+    color: #000;
+}
+.aalokan-img5{
+    width: 250px;
+    height: 350px;
+}
+.Coaching-heading{
+    text-align: center;
+    padding-top: 30px;
+}
+.Approach{
+    padding: 10px 0 5px 0;
+    color: #CE0C00;
+    font-weight: 800;
+    font-size: 28px;
+    text-align: center;
+}
+.button-learn{
+    background-color: #FF6600;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 15px
+}
+.Faculty-heading{
+    text-align: center;
+    padding-bottom: 9px;
+    padding-top: 25px;
+}
+.Renowned-Faculty{
+    text-align: center;
+}
+.Best-Faculty{
+    color: #1465A1;
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+}
+.Room-Teaching{
+    padding: 10px 0 5px 0;
+    color: #CE0C00;
+    font-weight: bold;
+    font-size: 24px;
+}
+.logo-card{
+    text-align: center;
+    padding-top: 20px;
+}
+@media screen and  (max-width: 1099px){
+    .aalokan-img5 {
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and  (max-width: 992px){
+    .about-image-text{
+        display: block;
+    }
+    .Aalokan-heading{
+        font-size: 15px
+    }
+    .aalokan-pg{
+        font-size: 14.5px;
+    }
+    .Approch-heading{
+        margin-top: 0px
+    }
+    .Approach{
+        font-size: 24px;
+    }
+    .youtube-viedo{
+        width: 100%;
+    }
+    .aalokan-img5{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .coaching-ugc{
+		font-size: 1.4rem;
+	}
+    
+}

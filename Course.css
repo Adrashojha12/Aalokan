@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800&display=swap');
+.about-aalokan{
+    background: #CE0C00;
+    border-bottom: 50px solid #bb1f15;
+}
+.Aalokan-heading{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Saira', sans-serif;
+}
+
+.About-Home{
+    font-family: 'Saira', sans-serif;
+    font-size: 14px;
+    display: flex;
+}
+.syllabus{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.last-button{
+    padding-left: 29px;
+}
+.OPTIONAL-SUBJECT{
+    font-size: 32px;
+    font-family: 'Saira', sans-serif;
+    padding-top: 60px;
+}
+.aalokan-img5{
+    width: 365px;
+    height: 350px;
+    padding-bottom: 20px;
+}
+.subjects{
+    width: 271px;
+    height: 67px;
+}
+@media screen and  (max-width: 1099px){
+    .aalokan-img5 {
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and  (max-width: 992px){
+    .syllabus{
+        display: block;
+    }
+    .last-button{
+        padding-left: 0px;
+        padding-bottom: 15px;
+    }
+}

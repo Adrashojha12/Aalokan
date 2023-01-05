@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="stylesheet" href="csat.css">
+    <link rel="stylesheet" href="registration-form.css">
+    
+    <!-- start google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+     <!-- end google font -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- start link bootstrap-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- end link bootstrap-->
+</head>
+<body>
+  <div>
+    <div class="container">
+      <div class="list">
+        <div class="item">
+          
+          <span class="item-txt"> <i class="fa fa-star-o" aria-hidden="true" style="color:#EC3237;"></i> MOCK INTERVIEW 2023</span>
+          <span class="item-txt"><i class="fa fa-star-o" aria-hidden="true" style="color:#EC3237;"></i> INTERVIEW guidance Program</span>
+          <span class="item-txt"> <i class="fa fa-star-o" aria-hidden="true" style="color:#EC3237;"></i> CIVIL Service IN 2023</span>
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  <div class="tobar-student-academy">
+    <span class="numder"><i class="fa fa-phone" aria-hidden="true" style="color:#CE0C00"></i>  <span class="number-head">7737480066</span></span>&nbsp;&nbsp;  
+    <div>
+    <span class="numder"> <i class="fa fa-user" aria-hidden="true" style="color:#CE0C00"></i> <span class="number-head">students login</span></span>&nbsp;&nbsp;   
+    </div>
+    <span class="numder"><i class="fa fa-registered" aria-hidden="true" style="color: #CE0C00"> </i> <span class="number-head"> REGISTER</span></span>&nbsp; &nbsp; 
+   </div>
+   <div class="tobar-button"> 
+    <a href="#register" class="nav-link" data-toggle="modal" >  <button  class="btn button-redmore" style="background-color: #CE0C00;color: #fff;height: 43px;margin-top: -6px;">Registeration</button></a>
+ <!-- Registeration Modal -->
+ <div class="modal fade" id="register">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content form-wrapper" style="border-radius: 46px;background-color: #2F4F4F;">
+       <div class="close-box" data-dismiss="modal">
+         <i class="fa fa-times fa-2x"></i>
+       </div>
+       <div class="container-fluid mt-5">
+         <form action="#" method="post" id="RegisterationForm">
+           <div class="form-group text-center pb-2">
+             <h4 class="color-white">Registration Form</h4>
+           </div>
+           <div class="form-row">
+             <div class="form-group col">
+               <label  for="name"  class="color-white">Name</label>
+               <input type="text" id="name" class="form-control" placeholder=" Your Name" required>
+             </div>
+             <div class="form-group col" style="position:relative;">
+               <label for='photo_upload' style="display:block"  class="color-white">Profile Picture</label>
+               <button type="button" class="btn btn-dark form-control" onclick="document.getElementById('photo_upload').click()" id="photo_btn">Select Image</button>
+               <input type="file" name="photo" id="photo_upload" accept="image/*" style="display:none;" required>
+             </div>
+           </div>
+           
+           <div class="form-group" style="position:relative;">
+             <label for="  Number"  class="color-white">Phone Number</label>
+             <input type="number" id="number" class="form-control mb-1" placeholder="Your Phone Number" required>
+             <a href="#" data-toggle="modal" data-target="#login" style="display:none; position: absolute; right: 0; font-size: 12px;">That's you? Login</a>
+             
+           </div>
+           <div class="form-group" style="position:relative;">
+             <label for="email"  class="color-white">Email</label>
+             <input type="email" id="email" class="form-control mb-1" placeholder="jhonedoe@gmail.com" required>
+             <a href="#" data-toggle="modal" data-target="#login" style="display:none; position: absolute; right: 0; font-size: 12px;">That's you? Login</a>
+           </div>
+           <legend  class="first-name"  >Date of brith: <span style="color: #FF6347"></span></legend>
+           <label  for="month"></label>
+           <select class="months" id="month" name="birth-month" required="">
+             <option value="">Month</option>
+             <option value="01">January</option>
+             <option value="02">February</option>
+             <option value="03">March</option>
+             <option value="04">April</option>
+             <option value="05">May</option>
+             <option value="06">June</option>
+             <option value="07">July</option>
+             <option value="08">August</option>
+             <option value="09">September</option>
+             <option value="10">October</option>
+             <option value="11">November</option>
+             <option value="12">December</option>
+           </select>
+           <label for="day"></label>
+           <select class="months" id="day" name="birth-day" required="">
+             <option value="">Day</option>
+             <option value="01">01</option>
+             <option value="02">02</option>
+             <option value="03">03</option>
+             <option value="04">04</option>
+             <option value="05">05</option>
+             <option value="06">06</option>
+             <option value="07">07</option>
+             <option value="08">08</option>
+             <option value="09">09</option>
+             <option value="10">10</option>
+             <option value="11">11</option>
+             <option value="12">12</option>
+             <option value="13">13</option>
+             <option value="14">14</option>
+             <option value="15">15</option>
+             <option value="16">16</option>
+             <option value="17">17</option>
+             <option value="18">18</option>
+             <option value="19">19</option>
+             <option value="20">20</option>
+             <option value="21">21</option>
+             <option value="22">22</option>
+             <option value="23">23</option>
+             <option value="24">24</option>
+             <option value="25">25</option>
+             <option value="26">26</option>
+             <option value="27">27</option>
+             <option value="28">28</option>
+             <option value="29">29</option>
+             <option value="30">30</option>
+             <option value="31">31</option>
+           </select>
+           <label for="year"></label>
+           <select class="months" id="year" name="birth-year" required="">
+             <option value="">Year</option>
+             <option value="2007">2007</option>
+             <option value="2006">2006</option>
+             <option value="2005">2005</option>
+             <option value="2004">2004</option>
+             <option value="2003">2003</option>
+             <option value="2002">2002</option>
+             <option value="2001">2001</option>
+             <option value="2000">2000</option>
+             <option value="1999">1999</option>
+             <option value="1998">1998</option>
+             <option value="1997">1997</option>
+             <option value="1996">1996</option>
+             <option value="1995">1995</option>
+             <option value="1994">1994</option>
+             <option value="1993">1993</option>
+             <option value="1992">1992</option>
+             <option value="1991">1991</option>
+             <option value="1990">1990</option>
+             <option value="1989">1989</option>
+             <option value="1988">1988</option>
+             <option value="1987">1987</option>
+             <option value="1986">1986</option>
+             <option value="1985">1985</option>
+             <option value="1984">1984</option>
+             <option value="1983">1983</option>
+             <option value="1982">1982</option>
+             <option value="1981">1981</option>
+             <option value="1980">1980</option>
+           </select>
+           <div class="form-row mb-1">
+             <div class="form-group col">
+               <label for="password" class="color-white">Password</label>
+               <input type="password" id="password" class="form-control" placeholder="*******************" required>
+              
+             </div>
+             <div class="form-group col">
+               <label for="password_confirmation" class="color-white">Confirm Password</label>
+               <input type="password" id="password_confirmation" class="form-control" placeholder="*******************" required>
+             </div>
+           </div>
+           <legend  class="first-name" class="color-white">Select Course: <span style="color: #FF6347"></span></legend>
+           <label  for="month"></label>
+           <select class="months" id="month" name="birth-month" required="">
+             <option value="">Course</option>
+             <option value="01">General Studies</option>
+             <option value="02">English</option>
+             <option value="03">Hindi</option>
+             <option value="04">Political Science</option>
+             <option value="05">Sociology</option>
+             <option value="06">Geography</option>
+           </select>
+
+           <div class="form-group">
+             <button class="btn btn-info form-control">Register</button>
+           </div>
+         </form>
+       </div>
+     </div>
+   </div>
+ </div>
+   <button  class="btn button-redmore" type="submit" style="height: 43px;">Live/online classes</button>
+ <a href="https://play.google.com/store/apps/details?id=co.varys.jcwfw">  <button  class="btn button-redmore " type="submit" style="background-color: green;height: 43px;" > Download app</button></a>
+ </div>
+ </div>
+ 
+  <!-- start navbar-->
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #fff;">
+    <img src="image/logo.jpg" alt="" width="120.44px" height="83.44px">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link   active" href="index.html" style="color: #1a1b1e;">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: #1a1b1e;">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Course.html" style="color: #1a1b1e;"> OUR COURSE</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="faculty.html" style="color: #1a1b1e;">FACULTY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="" style="color: #1a1b1e;">TOPER'S NOTES</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="" style="color: #1a1b1e;">GOVERNMENT JOBS</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="contact.html" style="color: #1a1b1e;">CONTACT</a>
+          </li>
+          
+          
+      </ul>
+    </div>
+  </nav>
+  <!-- end navbar-->
+
+           <!--start syllabus csat section-->
+           <div class="about-aalokan">
+            <div class="container">
+                <div>
+                <span class="Aalokan-heading">SYLLABUS FOR CSAT</span>
+                </div>
+                <div class="About-Home">
+                <a class="nav-link" href="index.html" style="color:#fff">  <span >Home</span></a>
+                <a class="nav-link" href="Course.html" style="color:#fff"><span >Syllabus</span></a>
+                <a class="nav-link" href="csat.html" style="color:#fff"><span >Syllabus for CSAT</span></a>
+                </div>
+            </div>
+          </div>
+          <!--end syllabus csat section-->
+          <!--start cast section-->
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-8 col-12">
+               <div class="PRELIMINARY">
+                <span>Paper II- (200 marks) Duration: Two hours</span>
+               </div>
+               <div style="line-height: 20px;">
+                <p class="Comprehension"><div class="text-circle"><span> ○ &nbsp;&nbsp;</span><span>Comprehension</span></div> <br>
+                  <div class="text-circle"><span> ○&nbsp;&nbsp;</span><span> Interpersonal skills including communication skills;</span></div> <br>
+                  <div class="text-circle"><span> ○&nbsp;&nbsp;</span><span> Logical reasoning and analytical ability </span></div><br>
+                  <div class="text-circle"><span> ○&nbsp;&nbsp;</span><span>  Decision-making and problem-solving </span></div><br>
+                  <div class="text-circle"><span> ○&nbsp;&nbsp;</span><span>General mental ability</span></div> <br>
+                    <div class="text-circle"><span> ○&nbsp;&nbsp;</span><span> Basic numeracy (numbers and their relations, orders of magnitude, etc.) (Class X level), Data interpretation (charts, graphs, tables, data sufficiency etc. - Class X level)</span></div> <br>
+                    <div class="text-circle"><span> ○&nbsp;&nbsp;</span><span>English Language Comprehension skills (Class X level).</span></div> <br>
+                    𝐍𝐨𝐭𝐞 𝟏 : Questions relating to English Language Comprehension skills of Class X level (last item in the Syllabus of Paper II) will be tested through passages from English language only without providing Hindi translation thereof in the question paper. <br>
+                    
+                    𝐍𝐨𝐭𝐞 𝟐 : The questions will be of multiple choice, objective type.</p>
+               </div> 
+               </div>
+               <div class="col-lg-4 col-sm-4 col-12">
+                <img src="image/aalokan-5.jpg" alt="" class="aalokan-img5">
+                <div> <br>
+                <img src="image/aalokan-1.jpg" alt="" class="aalokan-img5">
+                </div>
+                <div> <br>
+                 <img src="image/aalokan-3.jpg" alt="" class="aalokan-img5">
+                </div>
+            </div>
+               </div>
+               </div>
+          <!--end cast section-->
+         
+<!--start footer-->
+<!-- Remove the container if you want to extend the Footer to full width. -->
+
+<footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row mt-4">
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">About coaching</h5>
+
+        <p style="text-align: justify;">
+          Aalokan Academy for IAS / RAS / UGC NET JRF/ASSISTANT PROFESSOR / SCHOOL LECTURER / PGT TGT. Renowned for academic excellence for mentoring students preparing for civil services and lectureship exams.
+        </p>
+
+        <p style="text-align: justify;">
+          Academy is Founded by GROUP OF EMINENT ACADEMICIANS AND BUREAUCRATS in 2016 when a group of students approached to teach them in a scientific way.
+        </p>
+
+        <div class="mt-4">
+          <!-- Facebook -->
+          <div class="facebook-icons">
+       <a href="https://www.facebook.com/profile.php?id=100076578124775"> <i class="fab fa-facebook-f" style="color: #3b5998;"></i></a>&nbsp;
+          <!-- Dribbble -->
+        <a href="https://youtu.be/oa4r5dgdof0"> <i class="fa-brands fa-youtube" style="color: #FF0000"></i></a>&nbsp;
+          <!-- Twitter -->
+        <i class="fab fa-twitter" style="color: #00acee;"></i>&nbsp;
+          <!-- Google + -->
+          <i class="fab fa-google-plus-g"></i>
+        </div>
+          <!-- Linkedin -->
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+        <div class="form-outline form-white mb-4">
+          <input type="text" id="formControlLg" class="form-control form-control-lg">
+          <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
+        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
+
+        <ul class="fa-ul" style="margin-left: 1.65em;">
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2"> SP-20, First Floor Gopalpura Bye Pass Riddhi Siddhi Crossing, Rajasthan 302018</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">aalokanacademy.com</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">07737480066</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+        <table class="table text-center text-white">
+          <tbody class="font-weight-normal">
+            <tr>
+              <td>Monday - Thursday:</td>
+              <td>8am - 8pm</td>
+            </tr>
+            <tr>
+              <td>Friday - Saturday:</td>
+              <td>8am - 8am</td>
+            </tr>
+            <tr>
+              <td>Sunday:</td>
+              <td>10am – 6pm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: #CE0C00">
+    <span style="color: #fff;"> © 2023 Copyright:- RIGHT GURU DIGITAL</span>
+   </div>
+  <!-- Copyright -->
+</footer>
+
+
+<!-- End of .container -->
+<!-- end footer-->
+
+<!--start top button-->
+<button class="scroll-top">
+  <div class="arrow up"></div>
+</button>
+<!--end top button-->
+ <script src="topbutton.js"></script>
+</body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="stylesheet" href="registration-form.css">
+    
+    <!-- start google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+     <!-- end google font -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- start link bootstrap-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- end link bootstrap-->
+</head>
+<body>
+  <div>
+    <div class="container">
+      <div class="list">
+        <div class="item">
+          
+          <span class="item-txt"> <i class="fa fa-star-o" aria-hidden="true" style="color:#EC3237;"></i> MOCK INTERVIEW 2023</span>
+          <span class="item-txt"><i class="fa fa-star-o" aria-hidden="true" style="color:#EC3237;"></i> INTERVIEW guidance Program</span>
+          <span class="item-txt"> <i class="fa fa-star-o" aria-hidden="true" style="color:#EC3237;"></i> CIVIL Service IN 2023</span>
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  <div class="tobar-student-academy">
+    <span class="numder"><i class="fa fa-phone" aria-hidden="true" style="color:#CE0C00"></i>  <span class="number-head">7737480066</span></span>&nbsp;&nbsp;  
+    <div>
+    <span class="numder"> <i class="fa fa-user" aria-hidden="true" style="color:#CE0C00"></i> <span class="number-head">students login</span></span>&nbsp;&nbsp;   
+    </div>
+    <span class="numder"><i class="fa fa-registered" aria-hidden="true" style="color: #CE0C00"> </i> <span class="number-head"> REGISTER</span></span>&nbsp; &nbsp; 
+   </div>
+   <div class="tobar-button"> 
+    <a href="#register" class="nav-link" data-toggle="modal" >  <button  class="btn button-redmore" style="background-color: #CE0C00;color: #fff;height: 43px;margin-top: -6px;">Registeration</button></a>
+ <!-- Registeration Modal -->
+ <div class="modal fade" id="register">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content form-wrapper" style="border-radius: 46px;background-color: #2F4F4F;">
+       <div class="close-box" data-dismiss="modal">
+         <i class="fa fa-times fa-2x"></i>
+       </div>
+       <div class="container-fluid mt-5">
+         <form action="#" method="post" id="RegisterationForm">
+           <div class="form-group text-center pb-2">
+             <h4 class="color-white">Registration Form</h4>
+           </div>
+           <div class="form-row">
+             <div class="form-group col">
+               <label  for="name"  class="color-white">Name</label>
+               <input type="text" id="name" class="form-control" placeholder=" Your Name" required>
+             </div>
+             <div class="form-group col" style="position:relative;">
+               <label for='photo_upload' style="display:block"  class="color-white">Profile Picture</label>
+               <button type="button" class="btn btn-dark form-control" onclick="document.getElementById('photo_upload').click()" id="photo_btn">Select Image</button>
+               <input type="file" name="photo" id="photo_upload" accept="image/*" style="display:none;" required>
+             </div>
+           </div>
+           
+           <div class="form-group" style="position:relative;">
+             <label for="  Number"  class="color-white">Phone Number</label>
+             <input type="number" id="number" class="form-control mb-1" placeholder="Your Phone Number" required>
+             <a href="#" data-toggle="modal" data-target="#login" style="display:none; position: absolute; right: 0; font-size: 12px;">That's you? Login</a>
+             
+           </div>
+           <div class="form-group" style="position:relative;">
+             <label for="email"  class="color-white">Email</label>
+             <input type="email" id="email" class="form-control mb-1" placeholder="jhonedoe@gmail.com" required>
+             <a href="#" data-toggle="modal" data-target="#login" style="display:none; position: absolute; right: 0; font-size: 12px;">That's you? Login</a>
+           </div>
+           <legend  class="first-name"  >Date of brith: <span style="color: #FF6347"></span></legend>
+           <label  for="month"></label>
+           <select class="months" id="month" name="birth-month" required="">
+             <option value="">Month</option>
+             <option value="01">January</option>
+             <option value="02">February</option>
+             <option value="03">March</option>
+             <option value="04">April</option>
+             <option value="05">May</option>
+             <option value="06">June</option>
+             <option value="07">July</option>
+             <option value="08">August</option>
+             <option value="09">September</option>
+             <option value="10">October</option>
+             <option value="11">November</option>
+             <option value="12">December</option>
+           </select>
+           <label for="day"></label>
+           <select class="months" id="day" name="birth-day" required="">
+             <option value="">Day</option>
+             <option value="01">01</option>
+             <option value="02">02</option>
+             <option value="03">03</option>
+             <option value="04">04</option>
+             <option value="05">05</option>
+             <option value="06">06</option>
+             <option value="07">07</option>
+             <option value="08">08</option>
+             <option value="09">09</option>
+             <option value="10">10</option>
+             <option value="11">11</option>
+             <option value="12">12</option>
+             <option value="13">13</option>
+             <option value="14">14</option>
+             <option value="15">15</option>
+             <option value="16">16</option>
+             <option value="17">17</option>
+             <option value="18">18</option>
+             <option value="19">19</option>
+             <option value="20">20</option>
+             <option value="21">21</option>
+             <option value="22">22</option>
+             <option value="23">23</option>
+             <option value="24">24</option>
+             <option value="25">25</option>
+             <option value="26">26</option>
+             <option value="27">27</option>
+             <option value="28">28</option>
+             <option value="29">29</option>
+             <option value="30">30</option>
+             <option value="31">31</option>
+           </select>
+           <label for="year"></label>
+           <select class="months" id="year" name="birth-year" required="">
+             <option value="">Year</option>
+             <option value="2007">2007</option>
+             <option value="2006">2006</option>
+             <option value="2005">2005</option>
+             <option value="2004">2004</option>
+             <option value="2003">2003</option>
+             <option value="2002">2002</option>
+             <option value="2001">2001</option>
+             <option value="2000">2000</option>
+             <option value="1999">1999</option>
+             <option value="1998">1998</option>
+             <option value="1997">1997</option>
+             <option value="1996">1996</option>
+             <option value="1995">1995</option>
+             <option value="1994">1994</option>
+             <option value="1993">1993</option>
+             <option value="1992">1992</option>
+             <option value="1991">1991</option>
+             <option value="1990">1990</option>
+             <option value="1989">1989</option>
+             <option value="1988">1988</option>
+             <option value="1987">1987</option>
+             <option value="1986">1986</option>
+             <option value="1985">1985</option>
+             <option value="1984">1984</option>
+             <option value="1983">1983</option>
+             <option value="1982">1982</option>
+             <option value="1981">1981</option>
+             <option value="1980">1980</option>
+           </select>
+           <div class="form-row mb-1">
+             <div class="form-group col">
+               <label for="password" class="color-white">Password</label>
+               <input type="password" id="password" class="form-control" placeholder="*******************" required>
+              
+             </div>
+             <div class="form-group col">
+               <label for="password_confirmation" class="color-white">Confirm Password</label>
+               <input type="password" id="password_confirmation" class="form-control" placeholder="*******************" required>
+             </div>
+           </div>
+           <legend  class="first-name" class="color-white">Select Course: <span style="color: #FF6347"></span></legend>
+           <label  for="month"></label>
+           <select class="months" id="month" name="birth-month" required="">
+             <option value="">Course</option>
+             <option value="01">General Studies</option>
+             <option value="02">English</option>
+             <option value="03">Hindi</option>
+             <option value="04">Political Science</option>
+             <option value="05">Sociology</option>
+             <option value="06">Geography</option>
+           </select>
+
+           <div class="form-group">
+             <button class="btn btn-info form-control">Register</button>
+           </div>
+         </form>
+       </div>
+     </div>
+   </div>
+ </div>
+   <button  class="btn button-redmore" type="submit" style="height: 43px;">Live/online classes</button>
+ <a href="https://play.google.com/store/apps/details?id=co.varys.jcwfw">  <button  class="btn button-redmore " type="submit" style="background-color: green;height: 43px;" > Download app</button></a>
+ </div>
+ </div>
+ 
+  <!-- start navbar-->
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #fff;">
+    <img src="image/logo.jpg" alt="" width="120.44px" height="83.44px">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link   " href="index.html" style="color: #1a1b1e;">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html" style="color: #1a1b1e;">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Course.html" style="color: #1a1b1e;"> OUR COURSE</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="faculty.html" style="color: #1a1b1e;">FACULTY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="" style="color: #1a1b1e;">TOPER'S NOTES</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="" style="color: #1a1b1e;">GOVERNMENT JOBS</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="contact.html" style="color: #1a1b1e;">CONTACT</a>
+          </li>
+          
+          
+      </ul>
+    </div>
+  </nav>
+  <!-- end navbar-->
+
+          <!--start About aalokan section-->
+          <div class="about-aalokan">
+            <div class="container">
+                <div>
+                <span class="Aalokan-heading">About Aalokan IAS Academy - Shaping Talent</span>
+                </div>
+                <div class="About-Home">
+                <a class="nav-link" href="index.html" style="color:#fff">  <span >Home</span></a>
+                <a class="nav-link" href="about.html" style="color:#fff"><span >About Us</span></a>
+                </div>
+            </div>
+          </div>
+          <!--end About aalokan section-->
+          <!--start About section-->
+          <div class="container">
+          <div class="row">
+            <div class="col-lg-10 col-sm-10 col-12">
+                <div class="about-image-text">
+                    <img src="image/About Us.jpg" alt="">
+                    <div style="text-align: justify;">
+                      <div class="Welcome-to-Aalokan">
+                      <h2  class="welcome">Welcome to Aalokan Academy</h2>
+                      </div>
+                        <span class="aalokan-pg">
+                          Welcome to Aalokan Academy for IAS / RAS / UGC NET JRF/ASSISTANT PROFESSOR / SCHOOL LECTURER / PGT TGT. Renowned for academic excellence for mentoring students preparing for civil services and lectureship exams, we offer memorable learning experiences through our courses and classes which have a long standing tradition of perfection and discipline. Aalokan's teaching methodologies and experience in civil services examination coaching has lead to us amongst best civil services coaching in Jaipur. <br> <br>
+                          Academy is Founded by GROUP OF EMINENT ACADEMICIANS AND BUREAUCRATS in 2016 when a group of students approached to teach them in a scientific way. All the academicians and bureaucrats are famous for producing top results of IAS/RAS / UGC NET JRF in their dynamic leadership at national level. Therefore, the Academy is a diverse community of scholars and academics who teach and provide a welcoming atmosphere for teaching and learning for career development. <br> <br>
+                          The Academy is entirely dedicated for IAS / RAS/NET-JRF/ASSISTANT PROFESSOR RPSC & University Assistant Professor etc. and Founded by GROUP OF EMINENT ACADEMICIANS AND BUREAUCRATS with the goals of 'No Profit, No Loss'.</span>
+                    </div>
+                </div>
+                <div class="Coaching-heading">
+                   <h2>UPSC Coaching in jaipur</h2>
+                </div>
+                <div style="text-align: justify;">
+                    <span class="aalokan-pg">Aalokan Academy is one of the Jaipur's premiere coaching institutes for aspirants preparing for recruitment exams conducted by UPSC namely the Civil Services Exam (IAS/IFS/IPS/IRS, etc.) Examinations. Aalokan Academy believe that this preparation requires a completely focused and holistic approach and hence we have brought to you the most exhaustive and extensive General Studies, Public Administration and other Main optional paper courses. We are the leading coaching institute in Jaipur that helps aspirants successfully attempt the Indian Civil Services Examination which is conducted by UPSC every year. We intends to fill this supply side gap in education sector.</span>
+                </div>
+                <div style="text-align: justify; padding-top: 22px;">
+                    <span class="aalokan-pg">We seek to equip RAS & IAS aspirants with the foundation and insights they need to clear one of the most prestigious papers of RAS & IAS examinations. As a dedicated and committed organisation, it is our goal to help them maintain the learner's focus. We have extensive team of professors, researchers and research-fellows of all the sectors of RAS / IAS competitions, who on time-to time basis conduct sessions and set a high standard of excellence in teaching, research and service.</span>
+                </div>
+                <div class="Coaching-heading">
+                  <h2 class="coaching-ugc">Coaching for UGC NET JRF / College Lecturer Exam in Jaipur</h2>
+               </div>
+                <div style="text-align: justify;padding-top: 6px;">
+                    <span class="aalokan-pg">Now starting online- offline classes in Jaipur for UGC NET JRF / RPSC Assistant Professors of various subjects, Rajasthan PSI & RAS Foundation course, wherein eminent Professors and top Experts of the subject will be guiding the students. An exclusive test series are prepared of all three papers | / || (Subjects) & III (Rajasthan General Studies) for taking tests in twice a week (Wednesday & Saturday) online - offline.</span>
+                </div>
+                <div style="padding-top: 20px;">
+                  <h2>RAS Coaching in Jaipur</h2>
+               </div>
+               <div style="text-align: justify;padding-top: 6px;">
+                <span class="aalokan-pg">Aalokan Academy, Jaipur is an well known name for the students aspiring to crack Rajasthan Administrative Services Examination.Our Institute has multiple batches of the Foundation Course, Pre Special Course and Mains Special Course.</span> <br>
+            </div>
+            <div style="text-align: justify;padding-top: 6px;">
+              <span class="aalokan-pg">Our Institute has an inspiring learning environment to all the RAS aspirants including one to one mentoring sessions on strategy building,effective time management and catching up with the current affairs. With emphasis on constant assessment in the form of weekly tests followed with in depth explanations and weekly Indian and Rajasthan current affairs class.</span><br> <br>
+          </div>
+          <div style="text-align: justify;">
+            <span class="aalokan-pg">We are proud of our guiding principles, which lead students to understand the basics and encourage them to question the facts / theories rather than just accepting them. Our effort is not only to provide them with a road-map to effective learning, but also to reassure them of our motivating concern during their journey on the road to success.</span>
+        </div>
+                
+        <div style="padding-top: 20px;">
+          <h2>Our Idealogy</h2>
+       </div>
+       <div style="text-align: justify;">
+        <span class="aalokan-pg">At Aalokan Academy, students are encouraged to develop a pattern that proves to be effective in the long run. In terms of learning, there is something new to discover and analyze each and every day. To know more about how we can help you inch closer to the dream of clearing RPSC & UPSC, get in touch with Aalokan Academy. The Academy affords a personal touch to all its students with small class sizes, quick student service and assistance in finding accommodation for students from outside.</span> <br><br>
+       </div>
+       <div style="text-align: justify;">
+      <span class="aalokan-pg">Candidates appearing at this examination would be facing an examination which in many aspects differs from the university type exam. Consequently, the technique of preparation has to differ to suit the matrix of this examination. Preparation for most university examinations can be done at a leisure pace.</span><br><br>
+     </div>
+      <div style="text-align: justify;">
+       <span class="aalokan-pg">On the contrary, a candidate for the Civil & State Services Examination does not have much time at his disposal. It will be extremely unrealistic to think that one can prepare for this examination within a short time. Apart from vigorous preparation for at least one year, if candidates keep this examination in view for one more preceding year, they would be on the right path.</span><br><br>
+      </div>
+       <div style="text-align: justify;">
+       <span class="aalokan-pg">The Academy emphasizes on the nature of the preparation to be made, the pattern of setting the questions and how to tackle them, evoking their interest in the various areas of knowledge, and acquiring a picture-like view of the various themes to be studied.</span><br><br>
+        </div>
+
+      <div style="text-align: justify;">
+      <span class="aalokan-pg">All these dimensions of guidance would be PEDAGOGY projected as the teachers talk to the students in the sittings (no classes here) as per the schedule of work given to them at the time of enrolment. During the course duration the students will be spending on an average four hours every day in the Academy.</span><br><br>
+      </div>
+      <div style="text-align: justify;">
+      <span class="aalokan-pg">During the initial stages of preparation, aspirants are not clear with what to read in a newspaper and what might be avoided. Aalokan Academy provides a list of all important headlines to be read daily which helps you maintain focus on only relevant portions of the newspaper. Take down notes of all that seems important. Notes will be of great help during the revision as it is difficult to go back to everything in detail at the last minute. When there is more clarity - make notes of very, very important topics - just to say that important notes of current affairs in a week should be good enough.</span> <br><br>
+      </div>
+      <div style="text-align: justify;">
+        <span class="aalokan-pg">It would be a good idea to make notes of the editorial sections of the newspapers, while all other current affairs are already provided in the 'Aalokan' magazine. While the 'Focus' magazine provides notes on all the contemporary issues, reading newspapers helps in understanding the overall context of the issue being discussed. Thus, both go hand-in-hand. While the magazine is a collection of notes prepared by professional faculty, taking down notes from newspapers will give added advantage for the preparation.</span><br><br>
+        </div>
+        <div style="text-align: justify;">
+          <span class="aalokan-pg">To help IAS RAS aspirants with newspaper reading, Aalokan Academy IAS makes YouTube Videos called "Daily News Simplified (DNS)" which guide students regarding what news and editorials to study, why to study as well as how to study them.</span>
+          </div>
+          <div style="padding-top: 20px;">
+          <button  class="btn button-learn" type="submit" >LEARN MORE</button>
+           </div>  
+                <div class="Faculty-heading">
+                    <span class="Approach">WHY CHOOSE US ?</span>
+                </div>
+                <div class="card-deck">
+                  <div class="card">
+                    <div class="logo-card">
+                    <img class="card-img-top" src="image/logo.jpg" alt="Card image cap" style=" width: 104px;height: auto;">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" >Personal Attendtion to students</h5>
+                      <p class="card-text">If you want to do anything in life, the key is to believe in yourself. Having faith in yourself is essential for your personality development. Every person is unique by birth. Naturally everyone is unique in his own right and nature, all that is needed is to awaken the dormant aspirations within the contestants and to hone the personality so that he turns into a motivated person towards his goal. Aalokan Academy team of experienced faculty is committed to achieve / get result oriented goals.
+                        </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="logo-card">
+                    <img class="card-img-top" src="image/logo.jpg" alt="Card image cap" style=" width: 104px;height: auto;">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" >Hindi Medium</h5>
+                      <p class="card-text">UPSC aspirants of Hindi medium often want to know what to read and what not to read while preparing for civil services exam. Here we have prepared a list of useful books and other sources based on the understanding of UPSC/ RPSC toppers, their study methods and experience through this article and hope that this information will definitely help you in preparing for this exam properly. Will do. Aalokan Academy is fully committed to illuminate the merits of each one. Expert- team for preparation and effective writing in Hindi medium.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="logo-card">
+                    <img class="card-img-top" src="image/logo.jpg" alt="Card image cap" style=" width: 104px;height: auto;">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" >Limited batch size</h5>
+                      <p class="card-text">Aalokan Academy is committed to teach students in small batch (Super 50) and students are urged to select the institute on the basis of their quality and student percentage. All parents, regardless of the environment they live in, from whatever economic social background, have developed a desire to educate their children and make them something. Keeping all these aspects in mind, Aalokan Academy is committed to deliver the best results by emphasizing on the most quality reading-skills curriculum at the lowest cost.
+                        </p>
+                    </div>
+                  </div>
+                </div> <br>
+                <div class="card-deck">
+                  <div class="card">
+                    <div class="logo-card">
+                    <img class="card-img-top" src="image/logo.jpg" alt="Card image cap" style=" width: 104px;height: auto;">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" >Online Classes</h5>
+                      <p class="card-text">Aalokan Academy provides toppers notes to its students in both online and offline form and with special emphasis on test series. Because affordable coaching is as important for all the contestants as oxygen for breathing and clean water to drink and food for energy. To get success in competitive examinations, Aalokan Academy is fully committed to provide quality coaching to the needy participants at minimum fees.
+                        </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="logo-card">
+                    <img class="card-img-top" src="image/logo.jpg" alt="Card image cap" style=" width: 104px;height: auto;">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" >IAS CLASSES</h5>
+                      <p class="card-text">Aalokan Academy is fully dedicated to problem solving through both online and offline mode. Aalokan Academy has signed MoU with the best Faculty of Delhi for the coaching of IAS including the schedule of classes and gets the classes taught by them. Aalokan Academy adopts a strategy based on weekly tests both online and offline and feedback from its students to achieve remarkable results.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="logo-card">
+                    <img class="card-img-top" src="image/logo.jpg" alt="Card image cap" style=" width: 104px;height: auto;">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" >Free IAS RAS coaching in Aalokan</h5>
+                      <h5 class="card-title" >Academy Jaipur</h5>
+                      <p class="card-text">Aalokan Academy has signed an MoU with the best faculty of Delhi to provide quality coaching for IAS-RAS. Now faculty of all subjects of Delhi best coaching will be available in Jaipur. The academy is being run under a missionary approach. Aspiring students who make IAS-RAS will be able to get the best coaching in Jaipur. Aalokan Academy is conducting a Mega Scholarship Test for IAS-RAS Talent Hunt, in which more than 25,000 scholarships will be given.
+                        </p>
+                    </div>
+                  </div>
+                </div> <br>
+                <div class="card-deck">
+                  <div class="card">
+                    <div class="logo-card">
+                    <img class="card-img-top" src="image/logo.jpg" alt="Card image cap" style=" width: 104px;height: auto;">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" >Personal Attendtion to students</h5>
+                      <p class="card-text">If you want to do anything in life, the key is to believe in yourself. Having faith in yourself is essential for your personality development. Every person is unique by birth. Naturally everyone is unique in his own right and nature, all that is needed is to awaken the dormant aspirations within the contestants and to hone the personality so that he turns into a motivated person towards his goal. Aalokan Academy team of experienced faculty is committed to achieve / get result oriented goals.
+                        </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="logo-card">
+                    <img class="card-img-top" src="image/logo.jpg" alt="Card image cap" style=" width: 104px;height: auto;">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" >Hindi Medium</h5>
+                      <p class="card-text">UPSC aspirants of Hindi medium often want to know what to read and what not to read while preparing for civil services exam. Here we have prepared a list of useful books and other sources based on the understanding of UPSC/ RPSC toppers, their study methods and experience through this article and hope that this information will definitely help you in preparing for this exam properly. Will do. Aalokan Academy is fully committed to illuminate the merits of each one. Expert- team for preparation and effective writing in Hindi medium.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="logo-card">
+                    <img class="card-img-top" src="image/logo.jpg" alt="Card image cap" style=" width: 104px;height: auto;">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" >Limited batch size</h5>
+                      <p class="card-text">Aalokan Academy is committed to teach students in small batch (Super 50) and students are urged to select the institute on the basis of their quality and student percentage. All parents, regardless of the environment they live in, from whatever economic social background, have developed a desire to educate their children and make them something. Keeping all these aspects in mind, Aalokan Academy is committed to deliver the best results by emphasizing on the most quality reading-skills curriculum at the lowest cost.
+                        </p>
+                    </div>
+                  </div>
+                </div><br>
+
+                <div class="card-deck">
+                  <div class="card">
+                    <div class="logo-card">
+                    <img class="card-img-top" src="image/logo.jpg" alt="Card image cap" style=" width: 104px;height: auto;">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" >IAS CLASSES</h5>
+                      <p class="card-text">Aalokan Academy is fully dedicated to problem solving through both online and offline mode. Aalokan Academy has signed MoU with the best Faculty of Delhi for the coaching of IAS including the schedule of classes and gets the classes taught by them. Aalokan Academy adopts a strategy based on weekly tests both online and offline and feedback from its students to achieve remarkable results.
+                        </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="logo-card">
+                    <img class="card-img-top" src="image/logo.jpg" alt="Card image cap" style=" width: 104px;height: auto;">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" >Free IAS RAS coaching in Aalokan Academy Jaipur</h5>
+                      <p class="card-text">Aalokan Academy has signed an MoU with the best faculty of Delhi to provide quality coaching for IAS-RAS. Now faculty of all subjects of Delhi best coaching will be available in Jaipur. The academy is being run under a missionary approach. Aspiring students who make IAS- RAS will be able to get the best coaching in Jaipur. Aalokan Academy is conducting a Mega Scholarship Test for IAS-RAS Talent Hunt, in which more than 25,000 scholarships will be given.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="logo-card">
+                    <img class="card-img-top" src="image/logo.jpg" alt="Card image cap" style=" width: 104px;height: auto;">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" >Aalokan Academy Scholarship cum Admission Test (AaSAT), 2023</h5>
+                      <p class="card-text">Aalokan Academy conducts Aalokan Academy Scholarship Test (AASAT) before the start of the given course phase with no fee. It is mandatory to qualify AASAT for admission to all the courses in which AASAT is applicable. In addition, students can be enlisted and get scholarships on àtrial basis without any fees. If the applicants are successful in getting the scholarship, the scholarship will be provided as a special discount only after taking admission in Aalokan Academy and the amount will be adjusted at the time of admission.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+            <div>
+                <span class="Room-Teaching">Class Room Teaching</span>
+            </div>
+            <div style="text-align: justify; padding-top: 22px;">
+                <span class="aalokan-pg">Aalokan IAS Academy with its years of proven brilliance is a name to imagine with. This all starts at our classrooms that are the centers of the entire learning experience. IAS preparation involves a long term commitment and determination, due care is taken to keep the students inspired and focused. Other than transacting the set syllabus, the lecturers encourage questioning and taking up individual questions makes the class interactive and contributive. Every class has limited strength to make sure effective learning and coaching. To maintain the quality of classroom training, typical opinions are taken from the students.</span>
+            </div> 
+            <div style="text-align: justify; padding-top: 22px;">
+                <span class="aalokan-pg">𝐖𝐞 𝐚𝐭 𝐀𝐚𝐥𝐨𝐤𝐚𝐧 𝐈𝐀𝐒 𝐀𝐜𝐚𝐝𝐞𝐦𝐲 in jaipur always keeps in mind that our students while studying in the institute should feel completely satisfy in all aspects that may include accommodation provisions, faculty availability or some basic needs of the students as well.</span>
+            </div> 
+            <div style="text-align: justify; padding-top: 22px;">
+                <span class="aalokan-pg">The institute is centered with the beliefs that success lies on having dare that s why we are looking for the students who are passionate and dare to acquire success. Individual caring and quality teaching is the trademark of the academy.</span>
+            </div> 
+            <div style="text-align: justify; padding-top: 22px;">
+                <span class="aalokan-pg">In order to shape the talent we have a well established staff and faculty members having at least 10-15 years of experience in the industry.</span>
+            </div> 
+            <div style="text-align: justify; padding-top: 22px;">
+                <span class="aalokan-pg">Also we would like you to inform that making money has never been the academy s priorities ever since it came into existence, but to serve the poor, deserving candidates and backward class by helping them to achieve their goal by providing them with huge concessions in the fees.</span>
+            </div> 
+            <div style="text-align: justify; padding-top: 22px;padding-bottom: 40px;">
+                <span class="aalokan-pg">Keeping the above traits as the criteria, we always strive to improve and follow our system of guidance in the best possible manner that it would bring out the best in a candidate so that he/she could compete successfully in civil services examination.</span>
+            </div> 
+                
+            </div>
+
+            <div class="col-lg-2 col-sm-2 col-12">
+                <img src="image/aalokan-5.jpg" alt="" class="aalokan-img5">
+                <div> <br>
+                <img src="image/aalokan-1.jpg" alt="" class="aalokan-img5">
+                </div>
+                <div> <br>
+                 <img src="image/aalokan-3.jpg" alt="" class="aalokan-img5">
+                </div>
+                <div> <br>
+                <img src="image/aalokan-4.jpg" alt="" class="aalokan-img5">
+                </div>
+                <div> <br>
+                <img src="image/aalokan-7.jpg" alt="" class="aalokan-img5">
+                </div>
+            </div>
+
+            </div>
+            </div>
+           <!--start About section-->
+         
+<!--start footer-->
+<!-- Remove the container if you want to extend the Footer to full width. -->
+
+<footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row mt-4">
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">About coaching</h5>
+
+        <p style="text-align: justify;">
+          Aalokan Academy for IAS / RAS / UGC NET JRF/ASSISTANT PROFESSOR / SCHOOL LECTURER / PGT TGT. Renowned for academic excellence for mentoring students preparing for civil services and lectureship exams.
+        </p>
+
+        <p style="text-align: justify;">
+          Academy is Founded by GROUP OF EMINENT ACADEMICIANS AND BUREAUCRATS in 2016 when a group of students approached to teach them in a scientific way.
+        </p>
+
+        <div class="mt-4">
+          <!-- Facebook -->
+          <div class="facebook-icons">
+       <a href="https://www.facebook.com/profile.php?id=100076578124775"> <i class="fab fa-facebook-f" style="color: #3b5998;"></i></a>&nbsp;
+          <!-- Dribbble -->
+        <a href="https://youtu.be/oa4r5dgdof0"> <i class="fa-brands fa-youtube" style="color: #FF0000"></i></a>&nbsp;
+          <!-- Twitter -->
+        <i class="fab fa-twitter" style="color: #00acee;"></i>&nbsp;
+          <!-- Google + -->
+          <i class="fab fa-google-plus-g"></i>
+        </div>
+          <!-- Linkedin -->
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+        <div class="form-outline form-white mb-4">
+          <input type="text" id="formControlLg" class="form-control form-control-lg">
+          <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
+        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
+
+        <ul class="fa-ul" style="margin-left: 1.65em;">
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2"> SP-20, First Floor Gopalpura Bye Pass Riddhi Siddhi Crossing, Rajasthan 302018</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">aalokanacademy.com</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">07737480066</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+        <table class="table text-center text-white">
+          <tbody class="font-weight-normal">
+            <tr>
+              <td>Monday - Thursday:</td>
+              <td>8am - 8pm</td>
+            </tr>
+            <tr>
+              <td>Friday - Saturday:</td>
+              <td>8am - 8am</td>
+            </tr>
+            <tr>
+              <td>Sunday:</td>
+              <td>10am – 6pm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: #CE0C00">
+    <span style="color: #fff;"> © 2023 Copyright:- RIGHT GURU DIGITAL</span>
+   </div>
+  <!-- Copyright -->
+</footer>
+
+
+<!-- End of .container -->
+<!-- end footer-->
+
+<!--start top button-->
+<button class="scroll-top">
+  <div class="arrow up"></div>
+</button>
+<!--end top button-->
+ <script src="topbutton.js"></script>
+</body>
+</html>

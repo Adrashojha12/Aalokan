@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="registration-form.css">
+    
+    <!-- start google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+     <!-- end google font -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- start link bootstrap-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- end link bootstrap-->
+</head>
+<body>
+  <div>
+    <div class="container">
+      <div class="list">
+        <div class="item">
+          
+          <span class="item-txt"> <i class="fa fa-star-o" aria-hidden="true" style="color:#EC3237;"></i> MOCK INTERVIEW 2023</span>
+          <span class="item-txt"><i class="fa fa-star-o" aria-hidden="true" style="color:#EC3237;"></i> INTERVIEW guidance Program</span>
+          <span class="item-txt"> <i class="fa fa-star-o" aria-hidden="true" style="color:#EC3237;"></i> CIVIL Service IN 2023</span>
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  <div class="tobar-student-academy">
+    <span class="numder"><i class="fa fa-phone" aria-hidden="true" style="color:#CE0C00"></i>  <span class="number-head">7737480066</span></span>&nbsp;&nbsp;  
+    <div>
+    <span class="numder"> <i class="fa fa-user" aria-hidden="true" style="color:#CE0C00"></i> <span class="number-head">students login</span></span>&nbsp;&nbsp;   
+    </div>
+    <span class="numder"><i class="fa fa-registered" aria-hidden="true" style="color: #CE0C00"> </i> <span class="number-head"> REGISTER</span></span>&nbsp; &nbsp; 
+   </div>
+   <div class="tobar-button"> 
+    <a href="#register" class="nav-link" data-toggle="modal" >  <button  class="btn button-redmore" style="background-color: #CE0C00;color: #fff;height: 43px;margin-top: -6px;">Registeration</button></a>
+ <!-- Registeration Modal -->
+ <div class="modal fade" id="register">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content form-wrapper" style="border-radius: 46px;background-color: #2F4F4F;">
+       <div class="close-box" data-dismiss="modal">
+         <i class="fa fa-times fa-2x"></i>
+       </div>
+       <div class="container-fluid mt-5">
+         <form action="#" method="post" id="RegisterationForm">
+           <div class="form-group text-center pb-2">
+             <h4 class="color-white">Registration Form</h4>
+           </div>
+           <div class="form-row">
+             <div class="form-group col">
+               <label  for="name"  class="color-white">Name</label>
+               <input type="text" id="name" class="form-control" placeholder=" Your Name" required>
+             </div>
+             <div class="form-group col" style="position:relative;">
+               <label for='photo_upload' style="display:block"  class="color-white">Profile Picture</label>
+               <button type="button" class="btn btn-dark form-control" onclick="document.getElementById('photo_upload').click()" id="photo_btn">Select Image</button>
+               <input type="file" name="photo" id="photo_upload" accept="image/*" style="display:none;" required>
+             </div>
+           </div>
+           
+           <div class="form-group" style="position:relative;">
+             <label for="  Number"  class="color-white">Phone Number</label>
+             <input type="number" id="number" class="form-control mb-1" placeholder="Your Phone Number" required>
+             <a href="#" data-toggle="modal" data-target="#login" style="display:none; position: absolute; right: 0; font-size: 12px;">That's you? Login</a>
+             
+           </div>
+           <div class="form-group" style="position:relative;">
+             <label for="email"  class="color-white">Email</label>
+             <input type="email" id="email" class="form-control mb-1" placeholder="jhonedoe@gmail.com" required>
+             <a href="#" data-toggle="modal" data-target="#login" style="display:none; position: absolute; right: 0; font-size: 12px;">That's you? Login</a>
+           </div>
+           <legend  class="first-name"  >Date of brith: <span style="color: #FF6347"></span></legend>
+           <label  for="month"></label>
+           <select class="months" id="month" name="birth-month" required="">
+             <option value="">Month</option>
+             <option value="01">January</option>
+             <option value="02">February</option>
+             <option value="03">March</option>
+             <option value="04">April</option>
+             <option value="05">May</option>
+             <option value="06">June</option>
+             <option value="07">July</option>
+             <option value="08">August</option>
+             <option value="09">September</option>
+             <option value="10">October</option>
+             <option value="11">November</option>
+             <option value="12">December</option>
+           </select>
+           <label for="day"></label>
+           <select class="months" id="day" name="birth-day" required="">
+             <option value="">Day</option>
+             <option value="01">01</option>
+             <option value="02">02</option>
+             <option value="03">03</option>
+             <option value="04">04</option>
+             <option value="05">05</option>
+             <option value="06">06</option>
+             <option value="07">07</option>
+             <option value="08">08</option>
+             <option value="09">09</option>
+             <option value="10">10</option>
+             <option value="11">11</option>
+             <option value="12">12</option>
+             <option value="13">13</option>
+             <option value="14">14</option>
+             <option value="15">15</option>
+             <option value="16">16</option>
+             <option value="17">17</option>
+             <option value="18">18</option>
+             <option value="19">19</option>
+             <option value="20">20</option>
+             <option value="21">21</option>
+             <option value="22">22</option>
+             <option value="23">23</option>
+             <option value="24">24</option>
+             <option value="25">25</option>
+             <option value="26">26</option>
+             <option value="27">27</option>
+             <option value="28">28</option>
+             <option value="29">29</option>
+             <option value="30">30</option>
+             <option value="31">31</option>
+           </select>
+           <label for="year"></label>
+           <select class="months" id="year" name="birth-year" required="">
+             <option value="">Year</option>
+             <option value="2007">2007</option>
+             <option value="2006">2006</option>
+             <option value="2005">2005</option>
+             <option value="2004">2004</option>
+             <option value="2003">2003</option>
+             <option value="2002">2002</option>
+             <option value="2001">2001</option>
+             <option value="2000">2000</option>
+             <option value="1999">1999</option>
+             <option value="1998">1998</option>
+             <option value="1997">1997</option>
+             <option value="1996">1996</option>
+             <option value="1995">1995</option>
+             <option value="1994">1994</option>
+             <option value="1993">1993</option>
+             <option value="1992">1992</option>
+             <option value="1991">1991</option>
+             <option value="1990">1990</option>
+             <option value="1989">1989</option>
+             <option value="1988">1988</option>
+             <option value="1987">1987</option>
+             <option value="1986">1986</option>
+             <option value="1985">1985</option>
+             <option value="1984">1984</option>
+             <option value="1983">1983</option>
+             <option value="1982">1982</option>
+             <option value="1981">1981</option>
+             <option value="1980">1980</option>
+           </select>
+           <div class="form-row mb-1">
+             <div class="form-group col">
+               <label for="password" class="color-white">Password</label>
+               <input type="password" id="password" class="form-control" placeholder="*******************" required>
+              
+             </div>
+             <div class="form-group col">
+               <label for="password_confirmation" class="color-white">Confirm Password</label>
+               <input type="password" id="password_confirmation" class="form-control" placeholder="*******************" required>
+             </div>
+           </div>
+           <legend  class="first-name" class="color-white">Select Course: <span style="color: #FF6347"></span></legend>
+           <label  for="month"></label>
+           <select class="months" id="month" name="birth-month" required="">
+             <option value="">Course</option>
+             <option value="01">General Studies</option>
+             <option value="02">English</option>
+             <option value="03">Hindi</option>
+             <option value="04">Political Science</option>
+             <option value="05">Sociology</option>
+             <option value="06">Geography</option>
+           </select>
+
+           <div class="form-group">
+             <button class="btn btn-info form-control">Register</button>
+           </div>
+         </form>
+       </div>
+     </div>
+   </div>
+ </div>
+   <button  class="btn button-redmore" type="submit" style="height: 43px;">Live/online classes</button>
+ <a href="https://play.google.com/store/apps/details?id=co.varys.jcwfw">  <button  class="btn button-redmore " type="submit" style="background-color: green;height: 43px;" > Download app</button></a>
+ </div>
+ </div>
+ 
+  <!-- start navbar-->
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #fff;">
+    <img src="image/logo.jpg" alt="" width="120.44px" height="83.44px">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link   active" href="index.html" style="color: #1a1b1e;">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: #1a1b1e;">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Course.html" style="color: #1a1b1e;"> OUR COURSE</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="faculty.html" style="color: #1a1b1e;">FACULTY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="" style="color: #1a1b1e;">TOPER'S NOTES</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="" style="color: #1a1b1e;">GOVERNMENT JOBS</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="contact.html" style="color: #1a1b1e;">CONTACT</a>
+          </li>
+          
+          
+      </ul>
+    </div>
+  </nav>
+  <!-- end navbar-->
+
+           <!--start About aalokan section-->
+           <div class="about-aalokan">
+            <div class="container">
+                <div>
+                <span class="Aalokan-heading">SYLLABUS FOR GENERAL STUDIES</span>
+                </div>
+                <div class="About-Home">
+                <a class="nav-link" href="index.html" style="color:#fff">  <span >Home</span></a>
+                <a class="nav-link" href="Course.html" style="color:#fff"><span >Syllabus</span></a>
+                <a class="nav-link" href="Course.html" style="color:#fff"><span >Syllabus for General Studies</span></a>
+                </div>
+            </div>
+          </div>
+          <!--end About aalokan section-->
+          <!--start EXAMINATION section-->
+           <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-8 col-12">
+               <div class="PRELIMINARY">
+                <span>PRELIMINARY EXAMINATION</span>
+               </div> 
+               <div>
+                <p class="Examination">The Examination shall comprise two compulsory papers of 200 marks each. <br>
+
+                    𝐏𝐚𝐩𝐞𝐫 𝐈 - (𝟐𝟎𝟎 𝐦𝐚𝐫𝐤𝐬) 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: 𝐓𝐰𝐨 𝐡𝐨𝐮𝐫𝐬 <br>
+                    
+                    Current events of national and international importance.<br>
+                     History of India and Indian National Movement.<br>
+                     Indian and World Geography - Physical, Social, Economic Geography of India and the World.<br>
+                     Indian Polity and Governance - Constitution, Political System, Panchayati Raj, Public Policy, Rights Issues, etc.<br>
+                     Economic and Social Development Sustainable Development, Poverty, Inclusion, Demographics, Social Sector initiatives, etc. <br>
+                     General issues on Environmental Ecology, Bio-diversity and Climate Change - that do not require subject specialization. <br>
+                     General Science.</p>
+               </div>
+                 <div>
+                    <span class="main">MAIN EXAMINATION</span>
+                 </div>
+                 <div class="main-Examination-is">
+                    <span>The main Examination is intended to assess the overall intellectual traits and depth of understanding of candidates rather than merely the range of their information and memory. <br>
+
+                        The nature and standard of questions in the General Studies papers (Paper II to Paper V) will be such that a well-educated person will be able to answer them without any specialized study. The questions will be such as to test a candidate's general awareness of a variety of subjects, which will have relevance for a career in Civil Services. The questions are likely to test the candidate's basic understanding of all relevant issues, and ability to analyze, and take a view on conflicting socio- economic goals, objectives and demands. The candidates must give relevant, meaningful and succinct answers. <br>
+                        
+                        The scope of the syllabus for optional subject papers (Paper VI and Paper VII) for the examination is broadly of the honours degree level i.e. a level higher than the bachelors' degree and lower than the masters' degree. In the case of Engineering, Medical Science and law, the level corresponds to the bachelor's degree.
+                        
+                        Syllabi of the papers included in the scheme of Civil Services (Main) Examination are given as follows:-</span>
+                 </div> <br>
+                 <div>
+                    <span class="main">𝐏𝐀𝐏𝐄𝐑 - 𝐈</span>
+                 </div>
+                 <div class="main-Examination-is">
+                    <span>𝐄𝐬𝐬𝐚𝐲: Candidates will be required to write an essay on a specific topic. The choice of subjects will be given. They will be expected to keep closely to the subject of the essay to arrange their ideas in orderly fashion, and to write concisely. Credit will be given for effective and exact expression.
+
+                        English Comprehension & English Precis will be to test the English language Comprehension and English precis writing skills (at 10th standard level).</span>
+                 </div> <br>
+                 <div>
+                    <span class="main">𝐏𝐀𝐏𝐄𝐑 - 𝐈𝐈</span>
+                    <p class="Examination">𝐆𝐞𝐧𝐞𝐫𝐚𝐥 𝐒𝐭𝐮𝐝𝐢𝐞𝐬- 𝐈:  Indian Heritage and Culture, History and Geography of the World and Society. <br>
+
+                         Indian culture will cover the salient aspects of Art Forms, Literature and Architecture from ancient to modern times.<br>
+                        Modern Indian history from about the middle of the eighteenth century until the present- significant events, personalities, issues<br>
+                        The Freedom Struggle - its various stages and important contributors contributions from different parts of the country.<br>
+                         Post-independence consolidation and reorganization within the country.<br>
+                        History of the world will include events from 18th century such as industrial revolution, world wars, redrawal of national boundaries, colonization, decolonization, political philosophies like communism, capitalism, socialism etc.- their forms and effect on the society.<br>
+                        Salient features of Indian Society, Diversity of India.<br>
+                        Role of women and women's organization, population and associated issues, poverty and developmental issues, urbanization, their problems and their remedies.<br>
+                         Effects of globalization on Indian society <br>
+                         Social empowerment, communalism, regionalism & secularism. <br>
+                         Salient features of world's physical geography. <br>
+                         Distribution of key natural resources across the world (including South Asia and the Indian subcontinent); factors responsible for the location of primary, secondary, and tertiary sector industries in various parts of the world (including India) <br>
+                         Important Geophysical phenomena such as earthquakes, Tsunami, Volcanic activity, cyclone etc., geographical features and their location- changes in critical geographical features (including water bodies and ice-caps) and in flora and fauna and the effects of such changes.</p>
+                 </div>
+                 <div>
+                 <span class="main">𝐏𝐀𝐏𝐄𝐑 - 𝐈𝐈𝐈</span>
+                 <p class="Examination">𝐆𝐞𝐧𝐞𝐫𝐚𝐥 𝐒𝐭𝐮𝐝𝐢𝐞𝐬- 𝐈𝐈:Technology, Economic Development, Bio diversity, Environment, Security and Disaster Management. <br>
+
+                    Indian Economy and issues relating to planning, mobilization of resources, growth, development and employment.<br>
+                    Inclusive growth and issues arising from it.<br>
+                    Government Budgeting.
+                    Major crops cropping patterns in various parts of the country, different types of irrigation and irrigation systems storage, transport and marketing of agricultural produce and issues and related constraints; e-technology in the aid of farmers<br>
+                    Issues related to direct and indirect farm subsidies and minimum support prices; Public Distribution System- objectives, functioning, limitations, revamping; issues of buffer stocks and food security; Technology missions; economics of animal-rearing.<br>
+                    Food processing and related industries in India- scope and significance, location, upstream and downstream requirements, supply chain management.<br>
+                    Land reforms in India.<br>
+                    Effects of liberalization on the economy, changes in industrial policy and their effects on industrial growth.<br>
+                    Infrastructure: Energy, Ports, Roads, Airports, Railways etc.<br>
+                    Investment models.<br>
+                    Science and Technology- developments and their applications and effects in everyday life<br>
+                    Achievements of Indians in science & technology; indigenization of technology and developing new technology.<br>
+                    Awareness in the fields of IT, Space, Computers, robotics, nano-technology, bio-technology and issues relating to intellectual property rights.<br>
+                    Conservation, environmental pollution and degradation, environmental impact assessment<br>
+                    Disaster and disaster management.<br>
+                    Linkages between development and spread of extremism.<br>
+                    Role of external state and non-state actors in creating challenges to internal security.<br>
+                    Challenges to internal security through communication networks, role of media and social networking sites in internal security challenges, basics of cyber security; money-laundering and its prevention<br>
+                    Security challenges and their management in border areas; linkages of organized crime with terrorism<br>
+                    Various Security forces and agencies and their mandate</p>
+                 </div>
+                 <div>
+                    <span class="main">𝐏𝐀𝐏𝐄𝐑 - 𝐈𝐯</span>
+                    <p class="Examination">𝐆𝐞𝐧𝐞𝐫𝐚𝐥 𝐒𝐭𝐮𝐝𝐢𝐞𝐬- 𝐈𝐈𝐈:Technology, Economic Development, Bio diversity, Environment, Security and Disaster Management.<br>
+
+                        Indian Economy and issues relating to planning, mobilization of resources, growth, development and employment.<br>
+                        Inclusive growth and issues arising from it.<br>
+                        Government Budgeting.<br>
+                        Major crops cropping patterns in various parts of the country, different types of irrigation and irrigation systems storage, transport and marketing of agricultural produce and issues and related constraints; e-technology in the aid of farmers<br>
+                        Issues related to direct and indirect farm subsidies and minimum support prices; Public Distribution System- objectives, functioning, limitations, revamping; issues of buffer stocks and food security; Technology missions; economics of animal-rearing.<br>
+                        Food processing and related industries in India- scope and significance, location, upstream and downstream requirements, supply chain management.<br>
+                        Land reforms in India.<br>
+                        Effects of liberalization on the economy, changes in industrial policy and their effects on industrial growth.<br>
+                        Infrastructure: Energy, Ports, Roads, Airports, Railways etc.<br>
+                        Investment models.<br>
+                        Science and Technology- developments and their applications and effects in everyday life<br>
+                        Achievements of Indians in science & technology; indigenization of technology and developing new technology.<br>
+                        Awareness in the fields of IT, Space, Computers, robotics, nano-technology, bio-technology and issues relating to intellectual property rights.<br>
+                        Conservation, environmental pollution and degradation, environmental impact assessment<br>
+                        Disaster and disaster management.<br>
+                        Linkages between development and spread of extremism.<br>
+                        Role of external state and non-state actors in creating challenges to internal security.<br>
+                        Challenges to internal security through communication networks, role of media and social networking sites in internal security challenges, basics of cyber security; money-laundering and its prevention<br>
+                        Security challenges and their management in border areas; linkages of organized crime with terrorism<br>
+                        Various Security forces and agencies and their mandate</p>
+                        </div>
+                        <div>
+                            <span class="main">𝐏𝐀𝐏𝐄𝐑 - 𝐯</span>
+                            <p class="Examination">𝐆𝐞𝐧𝐞𝐫𝐚𝐥 𝐒𝐭𝐮𝐝𝐢𝐞𝐬- 𝐈𝐯:  Ethics, Integrity, and Aptitude<br>
+
+                                This paper will include questions to test the candidates' attitude and approach to issues relating to integrity, probity in public life and his problem solving approach to various issues and conflicts faced by him in dealing with society. Questions may utilise the case study approach to determine these aspects. The following broad areas will be covered.<br>
+                                
+                                Ethics and Human Interface: Essence, determinants and consequences of Ethics in human actions; dimensions of ethics; ethics in private and public relationships. Human Values - lessons from the lives and teachings of great leaders, reformers and administrators; role of family, society and educational institutions in inculcating values.<br>
+                                Attitude: content, structure, function; its influence and relation with thought and behavior; moral and political attitudes; social influence and persuasion.<br>
+                                Aptitude and foundational values for Civil Service , integrity, impartiality and non-partisanship, objectivity, dedication to public service, empathy, tolerance and compassion towards the weaker sections.<br>
+                                Emotional intelligence-concepts, and their utilities and application in administration and governance.<br>
+                                Contributions of moral thinkers and philosophers from India and world.<br>
+                                Public/Civil service values and Ethics in Public administration: Status and problems; ethical concerns and dilemmas in government and private institutions; laws, rules, regulations and conscience as sources of ethical guidance; accountability and ethical governance; strengthening of ethical and moral values in governance; ethical issues in international relations and funding; corporate governance.<br>
+                                Probity in Governance: Concept of public service; Philosophical basis of governance and probity; Information sharing and transparency in government, Right to Information, Codes of Ethics, Codes of Conduct, Citizen's Charters, Work culture, Quality of service delivery, Utilization of public funds, challenges of corruption.<br>
+                                Case Studies on above issues.</p>
+                            </div>
+               </div>
+
+               <div class="col-lg-4 col-sm-4 col-12">
+                <img src="image/aalokan-5.jpg" alt="" class="aalokan-img5">
+                <div> <br>
+                <img src="image/aalokan-1.jpg" alt="" class="aalokan-img5">
+                </div>
+                <div> <br>
+                 <img src="image/aalokan-3.jpg" alt="" class="aalokan-img5">
+                </div>
+            </div>
+              </div>
+              </div>
+         <!--end EXAMINATION section-->  
+         <!-- !--start footer--> 
+         <!-- Remove the container if you want to extend the Footer to full width. -->
+         
+         <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+           <!-- Grid container -->
+           <div class="container p-4">
+             <!--Grid row-->
+             <div class="row mt-4">
+               <!--Grid column-->
+               <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                 <h5 class="text-uppercase mb-4">About coaching</h5>
+         
+                 <p style="text-align: justify;">
+                   Aalokan Academy for IAS / RAS / UGC NET JRF/ASSISTANT PROFESSOR / SCHOOL LECTURER / PGT TGT. Renowned for academic excellence for mentoring students preparing for civil services and lectureship exams.
+                 </p>
+         
+                 <p style="text-align: justify;">
+                   Academy is Founded by GROUP OF EMINENT ACADEMICIANS AND BUREAUCRATS in 2016 when a group of students approached to teach them in a scientific way.
+                 </p>
+         
+                 <div class="mt-4">
+                   <!-- Facebook -->
+                   <div class="facebook-icons">
+                <a href="https://www.facebook.com/profile.php?id=100076578124775"> <i class="fab fa-facebook-f" style="color: #3b5998;"></i></a>&nbsp;
+                   <!-- Dribbble -->
+                 <a href="https://youtu.be/oa4r5dgdof0"> <i class="fa-brands fa-youtube" style="color: #FF0000"></i></a>&nbsp;
+                   <!-- Twitter -->
+                 <i class="fab fa-twitter" style="color: #00acee;"></i>&nbsp;
+                   <!-- Google + -->
+                   <i class="fab fa-google-plus-g"></i>
+                 </div>
+                   <!-- Linkedin -->
+                 </div>
+               </div>
+               <!--Grid column-->
+         
+               <!--Grid column-->
+               <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                 <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+         
+                 <div class="form-outline form-white mb-4">
+                   <input type="text" id="formControlLg" class="form-control form-control-lg">
+                   <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
+                 <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
+         
+                 <ul class="fa-ul" style="margin-left: 1.65em;">
+                   <li class="mb-3">
+                     <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2"> SP-20, First Floor Gopalpura Bye Pass Riddhi Siddhi Crossing, Rajasthan 302018</span>
+                   </li>
+                   <li class="mb-3">
+                     <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">aalokanacademy.com</span>
+                   </li>
+                   <li class="mb-3">
+                     <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">07737480066</span>
+                   </li>
+                   <li class="mb-3">
+                     <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+                   </li>
+                 </ul>
+               </div>
+               <!--Grid column-->
+         
+               <!--Grid column-->
+               <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                 <h5 class="text-uppercase mb-4">Opening hours</h5>
+         
+                 <table class="table text-center text-white">
+                   <tbody class="font-weight-normal">
+                     <tr>
+                       <td>Monday - Thursday:</td>
+                       <td>8am - 8pm</td>
+                     </tr>
+                     <tr>
+                       <td>Friday - Saturday:</td>
+                       <td>8am - 8am</td>
+                     </tr>
+                     <tr>
+                       <td>Sunday:</td>
+                       <td>10am – 6pm</td>
+                     </tr>
+                   </tbody>
+                 </table>
+               </div>
+               <!--Grid column-->
+             </div>
+             <!--Grid row-->
+           </div>
+           <!-- Grid container -->
+         
+           <!-- Copyright -->
+           <div class="text-center p-3" style="background-color: #CE0C00">
+            <span style="color: #fff;"> © 2023 Copyright:- RIGHT GURU DIGITAL</span>
+            </div>
+           <!-- Copyright -->
+         </footer>
+         
+         
+         <!-- End of .container -->
+         <!-- end footer-->
+
+<!--start top button-->
+<button class="scroll-top">
+  <div class="arrow up"></div>
+</button>
+<!--end top button-->
+ <script src="topbutton.js"></script>
+</body>
+</html>
